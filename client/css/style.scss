@@ -1,0 +1,19 @@
+@import 'variables';
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+body {
+    background-color: #1d1d1d;
+}
+
+h2 {
+    color: $primary;
+    margin: 0;
+}
+
+@media screen and (min-width:768px) {
+    .logo {
+        content: url(../img/svg/banner.svg);
+    }
+}
