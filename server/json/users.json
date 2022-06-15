@@ -1,5 +1,30 @@
 [
     {
+      "id": 0,
+      "name": "Mario Rossi",
+      "username": "Aranzulla",
+      "email": "m.rossi@gmail.com",
+      "address": {
+        "street": "Magazzini Generali",
+        "suite": "16",
+        "city": "Rome",
+        "zipcode": "00154",
+        "geo": {
+          "lat": "41.8926",
+          "lng": "12.4776"
+        }
+      },
+      "phone": "+39 351 779 68722",
+      "website": "https://epicode.com",
+      "company": {
+        "name": "Epicode School",
+        "catchPhrase": "Diventa Web Developer con il nostro corso epico",
+        "bs": "Web Developer Course"
+      },
+      "userid": "admin",
+      "password": "0000"
+    },
+    {
       "id": 1,
       "name": "Leanne Graham",
       "username": "Bret",
@@ -20,7 +45,9 @@
         "name": "Romaguera-Crona",
         "catchPhrase": "Multi-layered client-server neural-net",
         "bs": "harness real-time e-markets"
-      }
+      },
+      "userid": "user1",
+      "password": "0001"
     },
     {
       "id": 2,
@@ -43,7 +70,9 @@
         "name": "Deckow-Crist",
         "catchPhrase": "Proactive didactic contingency",
         "bs": "synergize scalable supply-chains"
-      }
+      },
+      "userid": "user2",
+      "password": "0002"
     },
     {
       "id": 3,
@@ -66,7 +95,9 @@
         "name": "Romaguera-Jacobson",
         "catchPhrase": "Face to face bifurcated interface",
         "bs": "e-enable strategic applications"
-      }
+      },
+      "userid": "user3",
+      "password": "0003"
     },
     {
       "id": 4,
@@ -89,7 +120,9 @@
         "name": "Robel-Corkery",
         "catchPhrase": "Multi-tiered zero tolerance productivity",
         "bs": "transition cutting-edge web services"
-      }
+      },
+      "userid": "user4",
+      "password": "0004"
     },
     {
       "id": 5,
@@ -112,7 +145,10 @@
         "name": "Keebler LLC",
         "catchPhrase": "User-centric fault-tolerant solution",
         "bs": "revolutionize end-to-end systems"
-      }
+      },
+      "userid": "user5",
+      "password": "0005"
+      
     },
     {
       "id": 6,
@@ -135,7 +171,9 @@
         "name": "Considine-Lockman",
         "catchPhrase": "Synchronised bottom-line interface",
         "bs": "e-enable innovative applications"
-      }
+      },
+      "userid": "user6",
+      "password": "0006"
     },
     {
       "id": 7,
@@ -158,7 +196,9 @@
         "name": "Johns Group",
         "catchPhrase": "Configurable multimedia task-force",
         "bs": "generate enterprise e-tailers"
-      }
+      },
+      "userid": "user7",
+      "password": "0007"
     },
     {
       "id": 8,
@@ -181,7 +221,9 @@
         "name": "Abernathy Group",
         "catchPhrase": "Implemented secondary concept",
         "bs": "e-enable extensible e-tailers"
-      }
+      },
+      "userid": "user8",
+      "password": "0008"
     },
     {
       "id": 9,
@@ -204,7 +246,9 @@
         "name": "Yost and Sons",
         "catchPhrase": "Switchable contextually-based project",
         "bs": "aggregate real-time technologies"
-      }
+      },
+      "userid": "user9",
+      "password": "0009"
     },
     {
       "id": 10,
@@ -227,6 +271,8 @@
         "name": "Hoeger LLC",
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
-      }
+      },
+      "userid": "user10",
+      "password": "0010"
     }
   ]

@@ -41,12 +41,12 @@ app.get('/api/users/:id', (req, res) => {
 //----------------------------------------------------------
 
 app.get('/api/posts', (req, res) => {
-    res.json(users);
+    res.json(posts);
 })
 
 app.get('/api/posts/:id', (req, res) => {
     const id = req.params.id;
-    users.forEach(ele => {
+    posts.forEach(ele => {
         if (ele.id === +id) {
             res.json(ele);
             return;
@@ -58,12 +58,12 @@ app.get('/api/posts/:id', (req, res) => {
 //----------------------------------------------------------
 
 app.get('/api/comments', (req, res) => {
-    res.json(users);
+    res.json(comments);
 })
 
 app.get('/api/comments/:id', (req, res) => {
     const id = req.params.id;
-    users.forEach(ele => {
+    comments.forEach(ele => {
         if (ele.id === +id) {
             res.json(ele);
             return;
@@ -98,6 +98,53 @@ app.post('/api/comments', (req, res) => {
 
 //============================================================================== PUT METHOD ==============================================================================
 
+app.put('/api/users', (req, res) => {
+    const id = req.params.id;
+    const obj_mod = req.body;
+    let obj = users.find(ele => ele.id === +id);
+    obj = obj_mod;
+});
+
+//----------------------------------------------------------
+
+app.put('/api/posts', (req, res) => {
+    const id = req.params.id;
+    const obj_mod = req.body;
+    let obj = posts.find(ele => ele.id === +id);
+    obj = obj_mod;
+});
+
+//----------------------------------------------------------
+
+app.put('/api/comments', (req, res) => {
+    const id = req.params.id;
+    const obj_mod = req.body;
+    let obj = comments.find(ele => ele.id === +id);
+    obj = obj_mod;
+});
+
+//============================================================================== DELETE METHOD ==============================================================================
+
+app.delete('/api/users', (req, res) => {
+    const id = req.params.id;
+    users.filter(ele => ele.id !== +id);
+});
+
+//----------------------------------------------------------
+
+app.delete('/api/posts', (req, res) => {
+    const id = req.params.id;
+    comments.filter(ele => ele.id !== +id);
+});
+
+//----------------------------------------------------------
+
+app.delete('/api/posts', (req, res) => {
+    const id = req.params.id;
+    comments.filter(ele => ele.id !== +id);
+});
+
+//============================================================================== LISTENER ==============================================================================
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
