@@ -2,14 +2,25 @@
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+/* General */
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
 
 body {
     background-color: #1d1d1d;
 }
 
-h2 {
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
     color: $primary;
     margin: 0;
+    font-size: 24px;
 }
 
 @media screen and (min-width:768px) {
@@ -17,3 +28,6 @@ h2 {
         content: url(../img/svg/banner.svg);
     }
 }
+
+
+@import 'main';
