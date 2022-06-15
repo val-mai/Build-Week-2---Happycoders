@@ -12119,6 +12119,10 @@ h3 span, .h3 span {
   border-radius: 20px;
 }
 
+#col-sx {
+  background: linear-gradient(173.07deg, #2A2929 36.09%, #9637E0 100%);
+}
+
 #col-sx .card {
   background-color: #1d1d1d;
   color: white;
