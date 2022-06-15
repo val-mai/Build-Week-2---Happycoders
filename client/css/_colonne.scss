@@ -1,10 +1,14 @@
 #col-sx{
     background: linear-gradient(173.07deg, #2A2929 36.09%, #9637E0 100%);
-    
+    height: 100vh;
+    position: sticky;
+    top: 0;
+
     .card{
-        background-color: $dark;
+        background-color: transparent;
         color: white;
-        border: 1px solid purple;
+        border: 1px solid #6C4897;
+        border-radius: 16px;
 
         .card-body{
             display: flex;
@@ -35,6 +39,64 @@
 }
 
     .container{
-        
+        margin-top: 20px;
+
+        .list-group-item{
+            background-color: transparent;
+            border: none;
+            color: white;
+
+            i{
+                color: #000000;
+                margin-right: 10px;
+            }
+
+        }
+
+        .list-group-item:hover{
+            background-color: #C3B4CF;
+            color: #000000;
+        }
     }
+
+    .footer{
+        text-align: center;
+        margin-top: 200px;
+    }
+}
+
+#col-dx{
+
+    .card{
+        background-color: transparent;
+        color: white;
+        border-radius: 16px;
+
+        .card-body{
+            display: flex;
+
+            .online{
+                margin-left: 20px;
+                margin-top: 5px;
+                    
+                p{
+                    margin-bottom: 0;
+                    font-size: 0.8em;
+
+                    .dot {
+                        height: 7px;
+                        width: 7px;
+                        background-color: rgb(68, 237, 68);
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
+                }
+
+            #pname{
+                font-size: 1.2em;
+            }
+        }
+    }
+}
 }
