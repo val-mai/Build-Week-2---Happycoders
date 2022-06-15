@@ -12118,4 +12118,39 @@ h3 span, .h3 span {
   height: 40px;
   border-radius: 20px;
 }
+
+#col-sx .card {
+  background-color: #1d1d1d;
+  color: white;
+  border: 1px solid purple;
+}
+
+#col-sx .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#col-sx .card .card-body .online {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+#col-sx .card .card-body .online p {
+  margin-bottom: 0;
+  font-size: 0.8em;
+}
+
+#col-sx .card .card-body .online p .dot {
+  height: 7px;
+  width: 7px;
+  background-color: #44ed44;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#col-sx .card .card-body .online #pname {
+  font-size: 1.2em;
+}
 /*# sourceMappingURL=style.css.map */
