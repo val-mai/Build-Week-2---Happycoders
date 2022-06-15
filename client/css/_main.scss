@@ -1,0 +1,60 @@
+
+.header {
+    background-color: #1d1d1d;
+}
+
+.header input{
+    border-radius: 15px;
+}
+
+.logo {
+    max-width: 220px;
+}
+
+.top-post {
+    justify-content: space-between;
+}
+
+.profilepic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#postTxt {
+    width: 100%;
+    margin: 0 0 1em 1em;
+    background-color: transparent;
+    color: white;
+}
+
+h3 span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #989898;
+}
+
+.post p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.post i {
+    font-size: 18px;
+    margin-left: 1rem;
+    color: #989898;
+}
+
+.post i:hover {
+    cursor: pointer;
+}
+
+.fa-heart:hover {
+    color: $primary;
+}
+
+.addPost button {
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+}
