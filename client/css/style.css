@@ -2576,7 +2576,6 @@ textarea.form-control-lg {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  color-adjust: exact;
 }
 
 .form-check-input[type="checkbox"] {
@@ -11957,6 +11956,79 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
+}
+
+.loginbody {
+  background: linear-gradient(116.82deg, rgba(150, 55, 224, 0.8) 0%, #302A2A 81.59%) !important;
+  height: 100vh;
+}
+
+.logincontainer {
+  background: rgba(217, 217, 217, 0.73);
+  border-radius: 50px;
+  height: 35vh;
+  padding-top: 2rem;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3rems;
+}
+
+.logincontainer .loginform {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.logincontainer .loginform #email {
+  background-color: #5F5555 !important;
+  border-radius: 7px;
+  color: #FFFF;
+}
+
+.logincontainer .loginform #password {
+  background-color: #5F5555 !important;
+  border-radius: 7px;
+  color: #FFFF;
+}
+
+.logincontainer .loginform .form-control::-webkit-input-placeholder {
+  color: #FFFF;
+  opacity: 1;
+}
+
+.logincontainer .loginform .form-control:-ms-input-placeholder {
+  color: #FFFF;
+  opacity: 1;
+}
+
+.logincontainer .loginform .form-control::-ms-input-placeholder {
+  color: #FFFF;
+  opacity: 1;
+}
+
+.logincontainer .loginform .form-control::placeholder {
+  color: #FFFF;
+  opacity: 1;
+}
+
+.logincontainer img, .logincontainer svg {
+  position: relative;
+}
+
+.logincontainer .iconify {
+  top: -31px;
+  color: #FFFF;
+}
+
+.logincontainer h4, .logincontainer .h4 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logincontainer button {
+  margin-left: 37%;
 }
 
 /* General */
