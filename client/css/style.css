@@ -12262,6 +12262,10 @@ h3 span, .h3 span {
   color: #000000;
 }
 
+#col-sx .container .profiledrop {
+  display: none;
+}
+
 #col-sx .footer {
   text-align: center;
   margin-top: 200px;
