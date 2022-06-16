@@ -3,15 +3,177 @@
     height: 100vh;
     position: sticky;
     top: 0;
+    padding-top: 20px;
 
     .card{
         background-color: transparent;
         color: white;
+
+        .card-body{
+
+            .online{
+
+                margin-top: 5px;
+                    
+                p{
+                    margin-bottom: 0;
+                    font-size: 0.8em;
+
+                    .dot {
+                        height: 7px;
+                        width: 7px;
+                        background-color: rgb(68, 237, 68);
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
+                }
+
+            #pname{
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+    .container{
+        
+        margin-top: 20px;
+
+        .list-group-item{
+            background-color: transparent;
+            border: none;
+            color: white;
+
+            .iconify{
+                color: #9637E0;
+                margin-right: 8px;
+                width: 20px;
+                height: 20px;
+            }
+
+        }
+
+        .list-group-item:hover{
+            background-color: #C3B4CF;
+            color: #000000;
+        }
+
+
+        .profiledrop{
+            display: none;
+        } 
+    }
+
+    .footer{
+        text-align: center;
+        margin-top: 200px;
+    }
+}
+
+#col-dx{
+    background-color: $dark-purple;
+    .card{
+        background-color: transparent;
+        color: white;
+        border: none;
+
+        .card-body{
+            display: -webkit-box;
+            padding: 10px;
+            margin-top: 10px;
+            .online{
+                margin-left: 15px;
+                margin-top: 5px;
+                    
+                p{
+                    margin-bottom: 0;
+                    font-size: 0.6em;
+
+                    .dot {
+                        height: 7px;
+                        width: 7px;
+                        background-color: rgb(68, 237, 68);
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
+                }
+
+            #pname{
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+    img{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+//=============================
+
+@media screen and (max-width:768px){
+    #col-sx{
+
+        .card{
+    
+            border: none;
+
+            .card-body{
+                text-align: center;
+                padding: 5px;
+                
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+    
+                .online{
+                        
+                    p{
+                       display: none;
+                    }
+            }
+        }
+    }
+
+    .container{
+       
+        padding: 0;
+
+        .list-group-item{
+
+            .iconify{
+                width: 30px;
+                height: 30px;
+                margin: 0;
+            }
+
+            strong{
+                display: none;
+            }
+        }
+    }
+
+    .footer{
+        display: none;
+    }
+}
+}
+
+@media screen and (min-width: 769px){
+    #col-sx{
+
+    .card{
         border: 1px solid #6C4897;
         border-radius: 16px;
 
         .card-body{
-            display: flex;
+            display: -webkit-box;
 
             .online{
                 margin-left: 20px;
@@ -66,44 +228,4 @@
         margin-top: 200px;
     }
 }
-
-#col-dx{
-
-    .card{
-        background-color: transparent;
-        color: white;
-        border: none;
-
-        .card-body{
-            display: flex;
-
-            .online{
-                margin-left: 15px;
-                margin-top: 5px;
-                    
-                p{
-                    margin-bottom: 0;
-                    font-size: 0.6em;
-
-                    .dot {
-                        height: 7px;
-                        width: 7px;
-                        background-color: rgb(68, 237, 68);
-                        border-radius: 50%;
-                        display: inline-block;
-                        margin-right: 5px;
-                    }
-                }
-
-            #pname{
-                font-size: 0.9em;
-            }
-        }
-    }
-}
-
-    img{
-        width: 35px;
-        height: 35px;
-    }
 }

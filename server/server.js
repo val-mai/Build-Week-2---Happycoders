@@ -93,7 +93,7 @@ app.post('/api/posts', (req, res) => {
 
 app.post('/api/comments', (req, res) => {
     const obj = req.body;
-    obj.id = countU++;
+    obj.id = countC++;
     comments.push(obj);
 })
 
