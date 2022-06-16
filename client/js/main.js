@@ -2,13 +2,13 @@ const usersAPI = 'http://localhost:3000/api/users/';
 
 // LOGIN
 let bottone = document.querySelector('#login');
-bottone.addEventListener('click',userLogin);
+bottone.addEventListener('click',userLogin)
 
-function userLogin(){ 
+/* function userLogin(){ 
     const regexpass = /^[0-9]*$/;
-    /* let input = document.querySelectorAll('.loginform input').value; */
-    let username = document.querySelector('#username').value;
-    console.log(username);
+/*     let input = document.querySelectorAll('#username').value; 
+     let username = document.querySelector('#username').value;
+        console.log('è');
 }
 /* btn.addEventListener('click', function() {
     
