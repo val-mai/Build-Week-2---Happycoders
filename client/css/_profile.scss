@@ -38,6 +38,7 @@
         border: 1px solid $purple !important;
         border-radius: 15px !important;
         box-shadow: 2px 2px 10px 1px $purple;
+        position: relative;
         h2, h5 {
             color: $white;
         }
@@ -64,15 +65,33 @@
 @media screen and (min-width:768px) {
     #icons {
         position: absolute;
-        top: 26vh;
+        top: 10.5rem;
     }
 
     #profileImg {
-        width: 15%;
+        width: 20%;
         left: -15vw;
     }
 
     h2 {
-        margin-top: 25vh !important
+        margin-top: 8rem !important
     }
+}
+
+@media screen and (min-width:992px) {
+   h2 {
+        margin-top: 11rem !important
+    }
+}
+
+@media screen and (min-width:1200px) {
+    h2 {
+         margin-top: 13rem !important
+     }
+}
+
+@media screen and (min-width:1400px) {
+    h2 {
+         margin-top: 15rem !important
+     }
 }
