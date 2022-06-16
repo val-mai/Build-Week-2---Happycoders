@@ -1,4 +1,17 @@
 // LOGIN
+let bottone = document.querySelector('#login');
+bottone.addEventListener('click',cerca);
+
+function cerca() {
+    
+}
+
+
+
+
+
+
+
 
 // HOME
 let profilesx = document.querySelector('#profilesx');
