@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row mt-3 sticky-top header">
             <div class="col-2 col-md-3 align-self-center">
                 <img class="logo" src="img/svg/logo.svg" alt="">
@@ -47,9 +47,16 @@
 
                   <div class="container">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><span class="iconify" data-icon="el:home-alt"></span>Home</li>
-                        <li class="list-group-item"><span class="iconify" data-icon="carbon:user-avatar-filled"></span>Profilo</li>
-                        <li class="list-group-item"><span class="iconify" data-icon="el:group-alt"></span>Amici</li>
+                        <li class="list-group-item"><span class="iconify" data-icon="el:home-alt"></span><strong>Home</strong></li>
+                        <li class="list-group-item" id="profilesx"><span class="iconify" data-icon="carbon:user-avatar-filled"></span><strong>Profilo</strong></li>
+                        <div class="profiledrop">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                              </ul>
+                        </div>
+                        <li class="list-group-item"><span class="iconify" data-icon="el:group-alt"></span><strong>Amici</strong></li>
                     </ul>
                   </div>
 
@@ -158,7 +165,7 @@
             </div>
 
 
-            <div class="d-none d-md-block col-md-2 align-self-center justify-self-start" id="col-dx">
+            <div class="d-none d-md-block col-md-2  justify-self-start" id="col-dx">
                 <!-- Colonna Dx -->
                 <div class="card">
                     <div class="card-body">
@@ -214,6 +221,7 @@
         </div>
     </div>
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>

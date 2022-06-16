@@ -12070,14 +12070,24 @@ fieldset:disabled .btn {
 .logincontainer {
   background: rgba(217, 217, 217, 0.73);
   border-radius: 50px;
-  height: 35vh;
+  height: 39vh;
   padding-top: 2rem;
-  width: 100%;
+  width: 90%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 3rems;
+  margin-right: 0rem;
+  margin-left: 1rem;
+  margin-top: 3rem;
+}
+
+.logincontainer img:nth-child(1) {
+  width: 30%;
+  margin-left: 36%;
+  margin-bottom: 1.3rem;
+}
+
+.logincontainer .mb-3 {
+  margin-bottom: 0rem !important;
 }
 
 .logincontainer .loginform {
@@ -12088,32 +12098,34 @@ fieldset:disabled .btn {
 .logincontainer .loginform #email {
   background-color: #5F5555 !important;
   border-radius: 7px;
-  color: #FFFF;
+  color: #FFFFFF7D;
+  padding-left: 2rem;
 }
 
 .logincontainer .loginform #password {
   background-color: #5F5555 !important;
   border-radius: 7px;
-  color: #FFFF;
+  color: #FFFFFF7D;
+  padding-left: 2rem;
 }
 
 .logincontainer .loginform .form-control::-webkit-input-placeholder {
-  color: #FFFF;
+  color: #FFFFFF7D;
   opacity: 1;
 }
 
 .logincontainer .loginform .form-control:-ms-input-placeholder {
-  color: #FFFF;
+  color: #FFFFFF7D;
   opacity: 1;
 }
 
 .logincontainer .loginform .form-control::-ms-input-placeholder {
-  color: #FFFF;
+  color: #FFFFFF7D;
   opacity: 1;
 }
 
 .logincontainer .loginform .form-control::placeholder {
-  color: #FFFF;
+  color: #FFFFFF7D;
   opacity: 1;
 }
 
@@ -12122,17 +12134,27 @@ fieldset:disabled .btn {
 }
 
 .logincontainer .iconify {
-  top: -31px;
-  color: #FFFF;
+  top: -2.3rem;
+  color: #FFFFFF7D;
+  font-size: 1.2rem;
 }
 
 .logincontainer h4, .logincontainer .h4 {
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-weight: bold;
 }
 
 .logincontainer button {
-  margin-left: 37%;
+  margin-left: 31%;
+}
+
+.btn {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 /* General */
@@ -12229,23 +12251,15 @@ h3 span, .h3 span {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  padding-top: 20px;
 }
 
 #col-sx .card {
   background-color: transparent;
   color: white;
-  border: 1px solid #6C4897;
-  border-radius: 16px;
-}
-
-#col-sx .card .card-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #col-sx .card .card-body .online {
-  margin-left: 20px;
   margin-top: 5px;
 }
 
@@ -12289,9 +12303,17 @@ h3 span, .h3 span {
   color: #000000;
 }
 
+#col-sx .container .profiledrop {
+  display: none;
+}
+
 #col-sx .footer {
   text-align: center;
   margin-top: 200px;
+}
+
+#col-dx {
+  background-color: #694692;
 }
 
 #col-dx .card {
@@ -12302,8 +12324,8 @@ h3 span, .h3 span {
 
 #col-dx .card .card-body {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 #col-dx .card .card-body .online {
@@ -12332,5 +12354,87 @@ h3 span, .h3 span {
 #col-dx img {
   width: 35px;
   height: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  #col-sx .card {
+    border: none;
+  }
+  #col-sx .card .card-body {
+    text-align: center;
+    padding: 5px;
+  }
+  #col-sx .card .card-body img {
+    width: 50px;
+    height: 50px;
+  }
+  #col-sx .card .card-body .online p {
+    display: none;
+  }
+  #col-sx .container {
+    padding: 0;
+  }
+  #col-sx .container .list-group-item .iconify {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  #col-sx .container .list-group-item strong {
+    display: none;
+  }
+  #col-sx .footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #col-sx .card {
+    border: 1px solid #6C4897;
+    border-radius: 16px;
+  }
+  #col-sx .card .card-body {
+    display: -webkit-box;
+  }
+  #col-sx .card .card-body .online {
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  #col-sx .card .card-body .online p {
+    margin-bottom: 0;
+    font-size: 0.8em;
+  }
+  #col-sx .card .card-body .online p .dot {
+    height: 7px;
+    width: 7px;
+    background-color: #44ed44;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  #col-sx .card .card-body .online #pname {
+    font-size: 1.2em;
+  }
+  #col-sx .container {
+    margin-top: 20px;
+  }
+  #col-sx .container .list-group-item {
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+  #col-sx .container .list-group-item .iconify {
+    color: #9637E0;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }
+  #col-sx .container .list-group-item:hover {
+    background-color: #C3B4CF;
+    color: #000000;
+  }
+  #col-sx .footer {
+    text-align: center;
+    margin-top: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

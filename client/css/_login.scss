@@ -6,48 +6,68 @@
 .logincontainer {
     background: rgba(217, 217, 217, 0.73);
     border-radius: 50px;
-    height: 35vh;
+    height: 39vh;
     padding-top: 2rem;
-    width: 100%;
+    width: 90%;
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 3rems;
+    margin-right: 0rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    img:nth-child(1) {
+        width: 30%;
+        margin-left: 36%;
+        margin-bottom: 1.3rem;
+       } 
+       .mb-3 {
+    margin-bottom: 0rem !important;
+      }
     .loginform {
         margin-left: 2rem;
         margin-right: 2rem;
         #email {
             background-color:#5F5555 !important;
             border-radius: 7px;
-            color: #FFFF;
+            color: #FFFFFF7D;
+            padding-left: 2rem;
         }
         #password {
             background-color:#5F5555 !important;
             border-radius: 7px;
-            color: #FFFF;
+            color: #FFFFFF7D;
+            padding-left: 2rem;
        }
        .form-control::placeholder {
-        color: #FFFF;
+        color: #FFFFFF7D;
         opacity: 1;
       }
     }
+
 
 img, svg {
     position: relative;
   }
     
   .iconify {
-    top: -31px;
-    color: #FFFF;
+    top: -2.3rem;
+    color: #FFFFFF7D;
+    font-size: 1.2rem;
   }
-  
- 
+
     h4 {
         text-align: center;
         margin-bottom: 2rem;
+        font-size: 1.8rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-weight: bold;
     }
     button {
-        margin-left: 37%;
+        margin-left: 31%;
     }
 }
+.btn {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+   }
+   
