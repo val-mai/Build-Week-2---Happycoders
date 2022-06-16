@@ -1,9 +1,11 @@
+const usersAPI = 'http://localhost:3000/api/users/';
+
 // LOGIN
 let bottone = document.querySelector('#login');
-bottone.addEventListener('click',cerca);
+bottone.addEventListener('click', userLogin);
 
-function cerca() { 
-
+function userLogin(){ 
+    
 }
 
 
@@ -30,7 +32,7 @@ function displayprofile(){
 
 
 // PROFILE
-const usersAPI = 'http://localhost:3000/api/users/';
+
 
 function userProfile(id) {
     fetch(usersAPI+id).then(response => response.json()).then(json => {
