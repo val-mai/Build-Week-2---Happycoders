@@ -12125,23 +12125,15 @@ h3 span, .h3 span {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  padding-top: 20px;
 }
 
 #col-sx .card {
   background-color: transparent;
   color: white;
-  border: 1px solid #6C4897;
-  border-radius: 16px;
-}
-
-#col-sx .card .card-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #col-sx .card .card-body .online {
-  margin-left: 20px;
   margin-top: 5px;
 }
 
@@ -12190,6 +12182,10 @@ h3 span, .h3 span {
   margin-top: 200px;
 }
 
+#col-dx {
+  background-color: #694692;
+}
+
 #col-dx .card {
   background-color: transparent;
   color: white;
@@ -12198,8 +12194,8 @@ h3 span, .h3 span {
 
 #col-dx .card .card-body {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 #col-dx .card .card-body .online {
@@ -12228,5 +12224,87 @@ h3 span, .h3 span {
 #col-dx img {
   width: 35px;
   height: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  #col-sx .card {
+    border: none;
+  }
+  #col-sx .card .card-body {
+    text-align: center;
+    padding: 5px;
+  }
+  #col-sx .card .card-body img {
+    width: 50px;
+    height: 50px;
+  }
+  #col-sx .card .card-body .online p {
+    display: none;
+  }
+  #col-sx .container {
+    padding: 0;
+  }
+  #col-sx .container .list-group-item .iconify {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  #col-sx .container .list-group-item strong {
+    display: none;
+  }
+  #col-sx .footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #col-sx .card {
+    border: 1px solid #6C4897;
+    border-radius: 16px;
+  }
+  #col-sx .card .card-body {
+    display: -webkit-box;
+  }
+  #col-sx .card .card-body .online {
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  #col-sx .card .card-body .online p {
+    margin-bottom: 0;
+    font-size: 0.8em;
+  }
+  #col-sx .card .card-body .online p .dot {
+    height: 7px;
+    width: 7px;
+    background-color: #44ed44;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  #col-sx .card .card-body .online #pname {
+    font-size: 1.2em;
+  }
+  #col-sx .container {
+    margin-top: 20px;
+  }
+  #col-sx .container .list-group-item {
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+  #col-sx .container .list-group-item .iconify {
+    color: #9637E0;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }
+  #col-sx .container .list-group-item:hover {
+    background-color: #C3B4CF;
+    color: #000000;
+  }
+  #col-sx .footer {
+    text-align: center;
+    margin-top: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
