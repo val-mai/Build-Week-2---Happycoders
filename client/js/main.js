@@ -2,14 +2,37 @@ const usersAPI = 'http://localhost:3000/api/users/';
 
 // LOGIN
 let bottone = document.querySelector('#login');
-bottone.addEventListener('click',userLogin);
+let input = document.querySelectorAll('.loginform input');
+
+if(bottone){
+    bottone.addEventListener('click', userLogin);
+}
 
 function userLogin(){ 
+    let username = input[0].value;
+    let password = input[1].value;
+
+    fetch(usersAPI).then(response => response.json()).then(json => {
+
+        let utente = json.find(ele => ele.userid === username);
+        
+        if(utente.userid !== undefined){
+            if(password === utente.password){
+                window.location.assign('home.html');
+            } else {
+            alert('username o password errati');
+            }
+        } else{
+            alert('utente non trovato');
+        }
+    });
+
+    
+
     const regexpass = /^[0-9]*$/;
-    /* let input = document.querySelectorAll('.loginform input').value; */
-    let username = document.querySelector('#username').value;
-    console.log(username);
+     
 }
+
 /* btn.addEventListener('click', function() {
     
     let txtTest = 'abc@gmail.com';
