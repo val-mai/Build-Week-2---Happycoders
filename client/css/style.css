@@ -12173,9 +12173,11 @@ h3 span, .h3 span {
   color: white;
 }
 
-#col-sx .container .list-group-item i {
-  color: #000000;
-  margin-right: 10px;
+#col-sx .container .list-group-item .iconify {
+  color: #9637E0;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
 }
 
 #col-sx .container .list-group-item:hover {
@@ -12191,7 +12193,7 @@ h3 span, .h3 span {
 #col-dx .card {
   background-color: transparent;
   color: white;
-  border-radius: 16px;
+  border: none;
 }
 
 #col-dx .card .card-body {
@@ -12201,13 +12203,13 @@ h3 span, .h3 span {
 }
 
 #col-dx .card .card-body .online {
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 5px;
 }
 
 #col-dx .card .card-body .online p {
   margin-bottom: 0;
-  font-size: 0.8em;
+  font-size: 0.6em;
 }
 
 #col-dx .card .card-body .online p .dot {
@@ -12220,6 +12222,11 @@ h3 span, .h3 span {
 }
 
 #col-dx .card .card-body .online #pname {
-  font-size: 1.2em;
+  font-size: 0.9em;
+}
+
+#col-dx img {
+  width: 35px;
+  height: 35px;
 }
 /*# sourceMappingURL=style.css.map */
