@@ -21,7 +21,7 @@ function userLogin(){
         if(utente.userid !== undefined){
             if(password === utente.password){
                 localStorage.clear;
-                localStorage.setItem('username', JSON.stringify(username));
+                localStorage.setItem('utente', JSON.stringify(utente));
                 window.location.assign('home.html');
             } else {
             alert('username o password errati');
@@ -139,25 +139,35 @@ function addPost(id) {
 // HOME
 let profilesx = document.querySelector('#profilesx');
 profilesx.addEventListener('mouseover', displayprofile);
-
+profilesx.addEventListener('mouseout', unshowprofile);
 
 function displayprofile(){
     let profiledrop = document.querySelector('.profiledrop');
     profiledrop.style.display = 'block';
 }
+function unshowprofile(){
+    let profiledrop = document.querySelector('.profiledrop');
+    profiledrop.style.display = 'none';
+}
 
 function profileSet(){
-    let username = JSON.parse(localStorage.getItem('username'));
-   
-    fetch(urlUser).then(response => response.json()).then(json => {
-        let utente = json.find(ele => ele.userid === username);
+    let utente = JSON.parse(localStorage.getItem('utente'));
+       
         console.log(utente);
 
+        let online = document.querySelector('.online');
         let onlineDot = document.querySelector('.online p');
 
         let onlineName = document.createElement('p');
         onlineName.id = 'pname';
-    })
+        onlineName.innerText = `${utente.name}`;
+        online.insertBefore(onlineName, onlineDot);
+
+    let dropdown = document.querySelector('#dropdown');
+    dropdown.innerHTML = `<li class="list-group-item">${utente.name}</li>
+    <li class="list-group-item">${utente.email}</li>
+    <li class="list-group-item">${utente.website}</li>`;
+    
 }
 
 
@@ -170,3 +180,12 @@ function profileSet(){
         console.log(json);
     })
 } */
+
+if(spname){
+    let utente = JSON.parse(localStorage.getItem('utente'));    
+
+    let spname = document.querySelector('.spname');
+    spname.innerText = utente.name;
+    let spemail = document.querySelector('.spemail');
+    spemail.innerText = utente.email;
+}
