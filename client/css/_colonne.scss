@@ -1,19 +1,33 @@
+.logo {
+    margin: 0 auto;
+    width: 3rem;
+}
+
 #col-sx{
-    background: linear-gradient(173.07deg, #2A2929 36.09%, #9637E0 100%);
+    background: linear-gradient(173.07deg, $dark 36.09%, $purple 100%);
     height: 100vh;
     position: sticky;
     top: 0;
-    padding-top: 20px;
+    padding: 0;
+    padding-top: 1.5rem;
 
     .card{
         background-color: transparent;
         color: white;
 
         .card-body{
+            padding: 0 !important;
+
+            img {
+                width: 1.8rem;
+                border-radius: 50%;
+                border: 1px dotted $purple;
+                margin: 0 auto;
+            }
 
             .online{
 
-                margin-top: 5px;
+                margin-top: 0.3rem;
                     
                 p{
                     margin-bottom: 0;
@@ -38,18 +52,20 @@
 
     .container{
         
-        margin-top: 20px;
+        margin-top: 1.3rem;
 
         .list-group-item{
+            padding: 0 !important;
+            margin-bottom: 1rem;
             background-color: transparent;
             border: none;
             color: white;
 
             .iconify{
                 color: #9637E0;
-                margin-right: 8px;
-                width: 20px;
-                height: 20px;
+                margin: 0 auto;
+                width: 1.5rem;
+                height: 1.5rem;
             }
 
         }
@@ -67,12 +83,18 @@
 
     .footer{
         text-align: center;
-        margin-top: 200px;
+        margin-top: 10rem;
     }
 }
 
-#col-dx{
-    background-color: $dark-purple;
+#col-dx {
+    background-color: #9737e015;
+    height: fit-content;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: solid 1px $dark-purple;
+    padding: 0;
+
     .card{
         background-color: transparent;
         color: white;
@@ -82,6 +104,7 @@
             display: -webkit-box;
             padding: 10px;
             margin-top: 10px;
+
             .online{
                 margin-left: 15px;
                 margin-top: 5px;
@@ -108,80 +131,49 @@
 }
 
     img{
-        width: 35px;
-        height: 35px;
+        width: 2rem;
+        height: 2rem;
     }
 }
 
 //=============================
 
-@media screen and (max-width:768px){
-    #col-sx{
-
-        .card{
-    
-            border: none;
-
-            .card-body{
-                text-align: center;
-                padding: 5px;
-                
-
-                img{
-                    width: 50px;
-                    height: 50px;
-                }
-    
-                .online{
-                        
-                    p{
-                       display: none;
-                    }
-            }
-        }
+@media screen and (min-width: 768px){
+    .logo {
+        width: 12rem;
+        text-align: left;
     }
 
-    .container{
-       
-        padding: 0;
-
-        .list-group-item{
-
-            .iconify{
-                width: 30px;
-                height: 30px;
-                margin: 0;
-            }
-
-            strong{
-                display: none;
-            }
-        }
-    }
-
-    .footer{
-        display: none;
-    }
-}
-}
-
-@media screen and (min-width: 769px){
     #col-sx{
 
     .card{
+        width: 90%;
         border: 1px solid #6C4897;
         border-radius: 16px;
+        margin: 0 auto;
 
         .card-body{
             display: -webkit-box;
+            margin: 1rem;
+
+
+
+            img {
+                width: 3.2rem;
+                margin: 0;
+            }
 
             .online{
-                margin-left: 20px;
-                margin-top: 5px;
+                margin-left: 1.3rem;
+                margin-top: 0.4rem;
                     
                 p{
-                    margin-bottom: 0;
-                    font-size: 0.8em;
+                    margin: 0;
+                    font-size: 1rem;
+
+                    &:last-child {
+                        font-size: 0.8rem;
+                    }
 
                     .dot {
                         height: 7px;
@@ -189,19 +181,15 @@
                         background-color: rgb(68, 237, 68);
                         border-radius: 50%;
                         display: inline-block;
-                        margin-right: 5px;
                     }
                 }
-
-            #pname{
-                font-size: 1.2em;
-            }
         }
     }
 }
 
     .container{
-        margin-top: 20px;
+        margin-top: 1.3rem;
+        text-align: left !important;
 
         .list-group-item{
             background-color: transparent;
@@ -210,11 +198,14 @@
 
             .iconify{
                 color: #9637E0;
-                margin-right: 8px;
-                width: 20px;
-                height: 20px;
+                margin-right: 0.5rem;
+                width: 3rem;
             }
+        }
 
+        #dropdown {
+            margin-left: 3.8rem; 
+            font-size: 0.8rem;
         }
 
         .list-group-item:hover{
@@ -225,7 +216,26 @@
 
     .footer{
         text-align: center;
-        margin-top: 200px;
+        margin-top: 10rem;
     }
 }
+}
+
+@media screen and (min-width: 992px) {
+    #dropdown {
+        margin-left: 4rem;  
+    }
+
+    .card {
+        .card-body {
+            .online{
+                p {
+                    font-size: 4rem;
+                }
+                &:last-child {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
 }

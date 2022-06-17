@@ -13,6 +13,10 @@
   margin: 0.5rem;
 }
 
+.iconify:hover {
+  color: #694692;
+}
+
 #header {
   background: linear-gradient(349.97deg, #1d1d1d 62.02%, #9637e0 113.37%);
 }
@@ -12082,36 +12086,47 @@ fieldset:disabled .btn {
 }
 
 .loginbody {
-  background: linear-gradient(116.82deg, rgba(150, 55, 224, 0.8) 0%, #302A2A 81.59%) !important;
+  background-image: linear-gradient(116.82deg, rgba(150, 55, 224, 0.8) 0%, #302A2A 81.59%) !important;
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logincontainer {
-  background: rgba(217, 217, 217, 0.73);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(217, 217, 217, 0.425);
   border-radius: 50px;
-  padding-top: 2rem;
   width: 90%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
-  margin-right: 0rem;
-  margin-left: 1rem;
-  margin-top: 3rem;
+  margin: 4rem auto;
 }
 
-.logincontainer img:nth-child(1) {
+.logincontainer img {
   width: 30%;
-  margin-left: 36%;
-  margin-bottom: 2.3rem;
-  margin-top: 1.3rem;
-}
-
-.logincontainer .mb-3 {
-  margin-bottom: 0rem !important;
+  margin: 2rem auto;
 }
 
 .logincontainer .loginform {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.logincontainer .loginform input {
+  margin: 0 auto !important;
 }
 
 .logincontainer .loginform #username {
@@ -12148,90 +12163,65 @@ fieldset:disabled .btn {
   opacity: 1;
 }
 
-.logincontainer img, .logincontainer svg {
-  position: relative;
-}
-
 .logincontainer .iconify {
   top: -2.3rem;
   color: #FFFFFF7D;
   font-size: 1.2rem;
+  position: relative;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
 }
 
 .logincontainer h4, .logincontainer .h4 {
   text-align: center;
+  color: #694692;
   margin-bottom: 2rem;
-  font-size: 1.8rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .logincontainer button {
-  margin-left: 24%;
-  padding: 0.8rem 2.9rem;
-  margin-bottom: 1rem;
+  margin: 0 auto 2rem auto;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 10px 1px #694692;
+          box-shadow: 2px 2px 10px 1px #694692;
 }
 
-@media only screen and (min-width: 768px) {
+.logincontainer button:hover {
+  background-color: #694692;
+  -webkit-box-shadow: 2px 2px 12px 1px #694692;
+          box-shadow: 2px 2px 12px 1px #694692;
+}
+
+@media screen and (min-width: 575px) {
   .logincontainer {
-    background: rgba(217, 217, 217, 0.73);
-    border-radius: 50px;
-    padding-top: 2rem;
-    width: 64%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: 2rem;
-    margin-left: 9rem;
-    margin-top: 3rem;
+    width: 60%;
   }
-  .logincontainer img:nth-child(1) {
-    width: 21%;
-    margin-left: 42%;
-    margin-bottom: 2.3rem;
-    margin-bottom: 2rem;
+  .logincontainer h4, .logincontainer .h4 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logincontainer {
+    width: 50%;
   }
   .logincontainer h4, .logincontainer .h4 {
     font-size: 2.8rem;
-    margin-left: 4rem;
-    margin-right: 3rem;
-  }
-  .logincontainer button {
-    margin-left: 25%;
-    padding: 0.8rem 5.9rem;
-    margin-bottom: 2rem;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .logincontainer {
-    margin-left: 18%;
-  }
-  .logincontainer img:nth-child(1) {
-    width: 23%;
-  }
-  .logincontainer .loginform {
-    margin: 0rem 3rem;
-  }
-  .logincontainer button {
-    margin-left: 30%;
-    font-size: 1.3rem;
+    width: 40%;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .logincontainer img:nth-child(1) {
-    width: 20%;
-  }
-  .logincontainer h4, .logincontainer .h4 {
-    font-size: 3rem;
-    margin-right: 4rem;
-  }
-  .logincontainer button {
-    margin-left: 33%;
-  }
-  .logincontainer .loginform {
-    margin: 5rem 6rem 1rem 6rem;
+@media screen and (min-width: 1200px) {
+  .logincontainer {
+    width: 30%;
   }
 }
 
@@ -12323,13 +12313,19 @@ h3 span, .h3 span {
   border-radius: 20px;
 }
 
+.logo {
+  margin: 0 auto;
+  width: 3rem;
+}
+
 #col-sx {
-  background: linear-gradient(173.07deg, #2A2929 36.09%, #9637E0 100%);
+  background: linear-gradient(173.07deg, #1d1d1d 36.09%, #9637e0 100%);
   height: 100vh;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding-top: 20px;
+  padding: 0;
+  padding-top: 1.5rem;
 }
 
 #col-sx .card {
@@ -12337,8 +12333,19 @@ h3 span, .h3 span {
   color: white;
 }
 
+#col-sx .card .card-body {
+  padding: 0 !important;
+}
+
+#col-sx .card .card-body img {
+  width: 1.8rem;
+  border-radius: 50%;
+  border: 1px dotted #9637e0;
+  margin: 0 auto;
+}
+
 #col-sx .card .card-body .online {
-  margin-top: 5px;
+  margin-top: 0.3rem;
 }
 
 #col-sx .card .card-body .online p {
@@ -12360,10 +12367,12 @@ h3 span, .h3 span {
 }
 
 #col-sx .container {
-  margin-top: 20px;
+  margin-top: 1.3rem;
 }
 
 #col-sx .container .list-group-item {
+  padding: 0 !important;
+  margin-bottom: 1rem;
   background-color: transparent;
   border: none;
   color: white;
@@ -12371,9 +12380,9 @@ h3 span, .h3 span {
 
 #col-sx .container .list-group-item .iconify {
   color: #9637E0;
-  margin-right: 8px;
-  width: 20px;
-  height: 20px;
+  margin: 0 auto;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 #col-sx .container .list-group-item:hover {
@@ -12387,11 +12396,18 @@ h3 span, .h3 span {
 
 #col-sx .footer {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 10rem;
 }
 
 #col-dx {
-  background-color: #694692;
+  background-color: #9737e015;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: solid 1px #694692;
+  padding: 0;
 }
 
 #col-dx .card {
@@ -12430,56 +12446,39 @@ h3 span, .h3 span {
 }
 
 #col-dx img {
-  width: 35px;
-  height: 35px;
+  width: 2rem;
+  height: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 12rem;
+    text-align: left;
+  }
   #col-sx .card {
-    border: none;
-  }
-  #col-sx .card .card-body {
-    text-align: center;
-    padding: 5px;
-  }
-  #col-sx .card .card-body img {
-    width: 50px;
-    height: 50px;
-  }
-  #col-sx .card .card-body .online p {
-    display: none;
-  }
-  #col-sx .container {
-    padding: 0;
-  }
-  #col-sx .container .list-group-item .iconify {
-    width: 30px;
-    height: 30px;
-    margin: 0;
-  }
-  #col-sx .container .list-group-item strong {
-    display: none;
-  }
-  #col-sx .footer {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  #col-sx .card {
+    width: 90%;
     border: 1px solid #6C4897;
     border-radius: 16px;
+    margin: 0 auto;
   }
   #col-sx .card .card-body {
     display: -webkit-box;
+    margin: 1rem;
+  }
+  #col-sx .card .card-body img {
+    width: 3.2rem;
+    margin: 0;
   }
   #col-sx .card .card-body .online {
-    margin-left: 20px;
-    margin-top: 5px;
+    margin-left: 1.3rem;
+    margin-top: 0.4rem;
   }
   #col-sx .card .card-body .online p {
-    margin-bottom: 0;
-    font-size: 0.8em;
+    margin: 0;
+    font-size: 1rem;
+  }
+  #col-sx .card .card-body .online p:last-child {
+    font-size: 0.8rem;
   }
   #col-sx .card .card-body .online p .dot {
     height: 7px;
@@ -12487,13 +12486,10 @@ h3 span, .h3 span {
     background-color: #44ed44;
     border-radius: 50%;
     display: inline-block;
-    margin-right: 5px;
-  }
-  #col-sx .card .card-body .online #pname {
-    font-size: 1.2em;
   }
   #col-sx .container {
-    margin-top: 20px;
+    margin-top: 1.3rem;
+    text-align: left !important;
   }
   #col-sx .container .list-group-item {
     background-color: transparent;
@@ -12502,9 +12498,12 @@ h3 span, .h3 span {
   }
   #col-sx .container .list-group-item .iconify {
     color: #9637E0;
-    margin-right: 8px;
-    width: 20px;
-    height: 20px;
+    margin-right: 0.5rem;
+    width: 3rem;
+  }
+  #col-sx .container #dropdown {
+    margin-left: 3.8rem;
+    font-size: 0.8rem;
   }
   #col-sx .container .list-group-item:hover {
     background-color: #C3B4CF;
@@ -12512,7 +12511,19 @@ h3 span, .h3 span {
   }
   #col-sx .footer {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 10rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #dropdown {
+    margin-left: 4rem;
+  }
+  .card .card-body .online p {
+    font-size: 4rem;
+  }
+  .card .card-body .online:last-child {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

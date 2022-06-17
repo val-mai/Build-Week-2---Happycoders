@@ -1,136 +1,105 @@
 .loginbody  {
-    background: linear-gradient(116.82deg, rgba(150, 55, 224, 0.8) 0%, #302A2A 81.59%) !important;
+    background-image: linear-gradient(116.82deg, rgba(150, 55, 224, 0.8) 0%, #302A2A 81.59%) !important;
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
 .logincontainer {
-    background: rgba(217, 217, 217, 0.73);
-    border-radius: 50px;
-    padding-top: 2rem;
-    width: 90%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: 0rem;
-    margin-left: 1rem;
-    margin-top: 3rem;
-    img:nth-child(1) {
-        width: 30%;
-        margin-left: 36%;
-        margin-bottom: 2.3rem;
-        margin-top: 1.3rem;
-       } 
-       .mb-3 {
-    margin-bottom: 0rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(217, 217, 217, 0.425);
+  border-radius: 50px;
+  width: 90%;
+  margin: 4rem auto;
+
+  img {
+      width: 30%;
+      margin: 2rem auto;
+     } 
+
+  .loginform {
+      margin: 0 auto;
+      width: 70%;
+      input {
+        margin: 0 auto !important;
       }
-    .loginform {
-        margin-left: 2rem;
-        margin-right: 2rem;
-        #username {
-            background-color:#5F5555 !important;
-            border-radius: 7px;
-            color: #FFFFFF7D;
-            padding-left: 2rem;
-        }
-        #password {
-            background-color:#5F5555 !important;
-            border-radius: 7px;
-            color: #FFFFFF7D;
-            padding-left: 2rem;
-       }
-       .form-control::placeholder {
-        color: #FFFFFF7D;
-        opacity: 1;
+      #username {
+          background-color:#5F5555 !important;
+          border-radius: 7px;
+          color: #FFFFFF7D;
+          padding-left: 2rem;
       }
+      #password {
+          background-color:#5F5555 !important;
+          border-radius: 7px;
+          color: #FFFFFF7D;
+          padding-left: 2rem;
+     }
+     .form-control::placeholder {
+      color: #FFFFFF7D;
+      opacity: 1;
     }
-
-
-img, svg {
-    position: relative;
   }
+
+.iconify {
+  top: -2.3rem;
+  color: #FFFFFF7D;
+  font-size: 1.2rem;
+  position: relative;  
+  justify-content: flex-start !important;
+}
+
+h4 {
+  text-align: center;
+  color: $dark-purple;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+  button {
+    margin: 0 auto 2rem auto;
+    padding: 1rem 2rem;
+    border-radius: 10px;    
+    box-shadow: 2px 2px 10px 1px $dark-purple;
     
-  .iconify {
-    top: -2.3rem;
-    color: #FFFFFF7D;
-    font-size: 1.2rem;
+    &:hover{
+      background-color: $dark-purple;
+      box-shadow: 2px 2px 12px 1px $dark-purple;
+    }
   }
+}
 
+@media screen and (min-width:575px) {
+  .logincontainer {
+    width: 60%;
     h4 {
-        text-align: center;
-        margin-bottom: 2rem;
-        font-size: 1.8rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        font-weight: bold;
+      font-size: 2.5rem;
     }
-    button {
-        margin-left: 24%;
-        padding: 0.8rem 2.9rem;
-        margin-bottom: 1rem;
-    }
+  }
 }
-@media only screen and (min-width: 768px) {
+
+@media screen and (min-width:768px) {
   .logincontainer {
-    background: rgba(217, 217, 217, 0.73);
-    border-radius: 50px;
-    padding-top: 2rem;
-    width: 64%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: 2rem;
-    margin-left: 9rem;
-    margin-top: 3rem;
-    img:nth-child(1) {
-        width: 21%;
-        margin-left: 42%;
-        margin-bottom: 2.3rem;
-        margin-bottom: 2rem;
-       } 
-       h4 {
-        font-size: 2.8rem;
-        margin-left: 4rem;
-        margin-right: 3rem;
-       }
-      button {
-        margin-left: 25%;
-        padding: 0.8rem 5.9rem;
-        margin-bottom: 2rem;
-
-      }
+    width: 50%;
+    h4 {
+      font-size: 2.8rem;
     }
-
+  }
 }
-@media only screen and (min-width: 992px) {
-  .logincontainer {
-      margin-left: 18%;
-    img:nth-child(1) {
-        width: 23%;
-       } 
-    .loginform {
-        margin: 0rem 3rem;
-    }
-    button {
-        margin-left: 30%;
-        font-size: 1.3rem;
-      }
-    }
 
+@media screen and (min-width:992px) {
+  .logincontainer {
+    width: 40%;
+  }
 }
-@media only screen and (min-width: 1200px) {
-  .logincontainer {
-    
-    img:nth-child(1) {
-        width: 20%;
-       } 
-       h4 {
-        font-size: 3rem;
-        margin-right: 4rem;
-       }
-      button {
-        margin-left: 33%;
-      }
-      .loginform {
-        margin: 5rem 6rem 1rem 6rem;
-      }
-    }
 
+@media screen and (min-width:1200px) {
+  .logincontainer {
+    width: 30%;
+  }
 }
