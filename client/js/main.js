@@ -181,13 +181,29 @@ function profileSet(){
 // PROFILE
 
 
-
-function compilaProfilo(){
-    let utente = JSON.parse(localStorage.getItem('utente'));    
+document.addEventListener('DOMContentLoaded', () => {
 
     let spname = document.querySelector('.spname');
+
+    if (spname) {
+    let utente = JSON.parse(localStorage.getItem('utente'));    
+
     console.log(spname);
-    spname.innerText = utente.name;
+    
+    let profTitle = document.querySelector('#profTitle');
+
+    profTitle.innerHTML = utente.name;
+
+    spname.innerHTML = utente.name;
     let spemail = document.querySelector('.spemail');
-    spemail.innerText = utente.email;
-}
+    spemail.innerHTML = utente.email;
+    let spaddress = document.querySelector('.spaddress');
+    spaddress.innerHTML = utente.address.city;
+    let spcompanyname = document.querySelector('.spcompanyname');
+    spcompanyname.innerHTML = utente.company.name;
+    let spcompanyfrase = document.querySelector('.spcompanyfrase');
+    spcompanyfrase.innerHTML = utente.company.catchPhrase;
+    let spbusiness = document.querySelector('.spbusiness');
+    spcompanyfrase.innerHTML = utente.company.bs;
+    }
+})
