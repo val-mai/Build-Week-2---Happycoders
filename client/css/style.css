@@ -12070,7 +12070,7 @@ fieldset:disabled .btn {
 .logincontainer {
   background: rgba(217, 217, 217, 0.73);
   border-radius: 50px;
-  height: 59vh;
+  height: 45vh;
   padding-top: 2rem;
   width: 90%;
   padding-right: var(--bs-gutter-x, 0.75rem);
@@ -12083,7 +12083,8 @@ fieldset:disabled .btn {
 .logincontainer img:nth-child(1) {
   width: 30%;
   margin-left: 36%;
-  margin-bottom: 1.3rem;
+  margin-bottom: 2.3rem;
+  margin-top: 1.3rem;
 }
 
 .logincontainer .mb-3 {
@@ -12149,12 +12150,75 @@ fieldset:disabled .btn {
 }
 
 .logincontainer button {
-  margin-left: 31%;
+  margin-left: 24%;
+  padding: 0.8rem 2.9rem;
 }
 
-.btn {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+@media only screen and (min-width: 768px) {
+  .logincontainer {
+    background: rgba(217, 217, 217, 0.73);
+    border-radius: 50px;
+    height: 56vh;
+    padding-top: 2rem;
+    width: 64%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: 2rem;
+    margin-left: 9rem;
+    margin-top: 3rem;
+  }
+  .logincontainer img:nth-child(1) {
+    width: 21%;
+    margin-left: 42%;
+    margin-bottom: 2.3rem;
+    margin-top: 1.3rem;
+  }
+  .logincontainer h4, .logincontainer .h4 {
+    font-size: 2.8rem;
+    margin-left: 4rem;
+    margin-right: 3rem;
+  }
+  .logincontainer button {
+    margin-left: 25%;
+    padding: 0.8rem 5.9rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logincontainer {
+    height: 59vh;
+    margin-left: 18%;
+  }
+  .logincontainer img:nth-child(1) {
+    width: 23%;
+  }
+  .logincontainer .loginform {
+    margin: 0rem 3rem;
+  }
+  .logincontainer button {
+    margin-left: 30%;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logincontainer {
+    height: 65vh;
+  }
+  .logincontainer img:nth-child(1) {
+    width: 20%;
+  }
+  .logincontainer h4, .logincontainer .h4 {
+    font-size: 3rem;
+    margin-right: 4rem;
+  }
+  .logincontainer button {
+    margin-left: 33%;
+  }
+  .logincontainer .loginform {
+    margin: 5rem 6rem 1rem 6rem;
+  }
 }
 
 /* General */
