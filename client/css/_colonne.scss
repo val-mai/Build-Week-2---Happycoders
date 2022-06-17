@@ -1,5 +1,5 @@
 .logo {
-    margin: 0 auto;
+    margin: 0 1rem 0 auto;
     width: 3rem;
 }
 
@@ -14,6 +14,7 @@
     .card{
         background-color: transparent;
         color: white;
+        text-align: center;
 
         .card-body{
             padding: 0 !important;
@@ -25,9 +26,9 @@
                 margin: 0 auto;
             }
 
-            .online{
-
+            .online{   
                 margin-top: 0.3rem;
+                display: none;
                     
                 p{
                     margin-bottom: 0;
@@ -53,6 +54,7 @@
     .container{
         
         margin-top: 1.3rem;
+        padding: 0;
 
         .list-group-item{
             padding: 0 !important;
@@ -60,6 +62,10 @@
             background-color: transparent;
             border: none;
             color: white;
+
+            strong {
+                display: none;
+            }
 
             .iconify{
                 color: #9637E0;
@@ -71,13 +77,14 @@
         }
 
         .list-group-item:hover{
+            display: none;
             background-color: #C3B4CF;
             color: #000000;
         }
 
 
         .profiledrop{
-            display: none;
+            display: none !important;
         } 
     }
 
@@ -110,7 +117,7 @@
                 margin-top: 5px;
                     
                 p{
-                    margin-bottom: 0;
+                    margin: 0;
                     font-size: 0.6em;
 
                     .dot {
@@ -147,6 +154,10 @@
     #col-sx{
 
     .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         width: 90%;
         border: 1px solid #6C4897;
         border-radius: 16px;
@@ -156,8 +167,6 @@
             display: -webkit-box;
             margin: 1rem;
 
-
-
             img {
                 width: 3.2rem;
                 margin: 0;
@@ -166,6 +175,7 @@
             .online{
                 margin-left: 1.3rem;
                 margin-top: 0.4rem;
+                display: inline-block;
                     
                 p{
                     margin: 0;
@@ -196,11 +206,19 @@
             border: none;
             color: white;
 
+            strong {
+                display: inline-block;
+            }
+
             .iconify{
                 color: #9637E0;
                 margin-right: 0.5rem;
                 width: 3rem;
             }
+
+            .profiledrop{
+                display: inline-block;
+            } 
         }
 
         #dropdown {
@@ -209,8 +227,7 @@
         }
 
         .list-group-item:hover{
-            background-color: #C3B4CF;
-            color: #000000;
+        display: inline-block;
         }
     }
 
@@ -227,10 +244,15 @@
     }
 
     .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         .card-body {
             .online{
                 p {
-                    font-size: 4rem;
+                    font-size: 3rem;
                 }
                 &:last-child {
                     font-size: 1.3rem;
