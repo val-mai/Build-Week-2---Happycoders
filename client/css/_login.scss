@@ -6,7 +6,6 @@
 .logincontainer {
     background: rgba(217, 217, 217, 0.73);
     border-radius: 50px;
-    height: 45vh;
     padding-top: 2rem;
     width: 90%;
     padding-right: var(--bs-gutter-x, 0.75rem);
@@ -66,13 +65,13 @@ img, svg {
     button {
         margin-left: 24%;
         padding: 0.8rem 2.9rem;
+        margin-bottom: 1rem;
     }
 }
 @media only screen and (min-width: 768px) {
   .logincontainer {
     background: rgba(217, 217, 217, 0.73);
     border-radius: 50px;
-    height: 56vh;
     padding-top: 2rem;
     width: 64%;
     padding-right: var(--bs-gutter-x, 0.75rem);
@@ -84,7 +83,7 @@ img, svg {
         width: 21%;
         margin-left: 42%;
         margin-bottom: 2.3rem;
-        margin-top: 1.3rem;
+        margin-bottom: 2rem;
        } 
        h4 {
         font-size: 2.8rem;
@@ -94,7 +93,7 @@ img, svg {
       button {
         margin-left: 25%;
         padding: 0.8rem 5.9rem;
-        margin-top: 2rem;
+        margin-bottom: 2rem;
 
       }
     }
@@ -102,7 +101,6 @@ img, svg {
 }
 @media only screen and (min-width: 992px) {
   .logincontainer {
-      height: 59vh;
       margin-left: 18%;
     img:nth-child(1) {
         width: 23%;
@@ -119,7 +117,6 @@ img, svg {
 }
 @media only screen and (min-width: 1200px) {
   .logincontainer {
-    height: 65vh;
     
     img:nth-child(1) {
         width: 20%;
