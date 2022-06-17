@@ -100,7 +100,7 @@ function addPost(id) {
 
 
 /* Fine Home Main */
-const usersAPI = 'http://localhost:3000/api/users/';
+
 
 // LOGIN
 let bottone = document.querySelector('#login');
@@ -114,7 +114,7 @@ function userLogin(){
     let username = input[0].value;
     let password = input[1].value;
 
-    fetch(usersAPI).then(response => response.json()).then(json => {
+    fetch(urlUser).then(response => response.json()).then(json => {
 
         let utente = json.find(ele => ele.userid === username);
         
@@ -159,19 +159,15 @@ function userLogin(){
 
 
 // HOME
-/* let profilesx = document.querySelector('#profilesx');
-profilesx.addEventListener('mouseover', displayprofile); */
-/* profilesx.addEventListener('mouseout', unshow); */
+let profilesx = document.querySelector('#profilesx');
+profilesx.addEventListener('mouseover', displayprofile);
 
-/* function displayprofile(){
+
+function displayprofile(){
     let profiledrop = document.querySelector('.profiledrop');
     profiledrop.style.display = 'block';
 }
- */
-/* function unshow(){
-    let profilehide = document.querySelector('.profiledrop');
-    profilehide.style.display = 'none';
-} */
+
 
 
 // PROFILE
