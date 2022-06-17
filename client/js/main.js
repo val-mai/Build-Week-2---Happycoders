@@ -1,7 +1,4 @@
 
-
-
-
 /* Home Main */
 
 let idLogin = 5;
