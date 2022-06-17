@@ -84,15 +84,16 @@ app.post('/api/users', (req, res) => {
 
 app.post('/api/posts', (req, res) => {
     const obj = req.body;
-    obj.id = countU++;
+    obj.id = countP++;
     posts.push(obj);
+    res.json('Post Aggiunto');
 })
 
 //----------------------------------------------------------
 
 app.post('/api/comments', (req, res) => {
     const obj = req.body;
-    obj.id = countU++;
+    obj.id = countC++;
     comments.push(obj);
 })
 
