@@ -12399,7 +12399,7 @@ h3 span, .h3 span {
 }
 
 #col-sx .container .profiledrop {
-  display: none !important;
+  display: none;
 }
 
 #col-sx .footer {

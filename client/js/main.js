@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function showPosts(post) {
     let postCont = document.querySelector('.post-container');
+    if(postCont){
     postCont.innerHTML = "";
     post.forEach(post => {
         let postdiv = document.createElement('div');
@@ -103,6 +104,7 @@ function showPosts(post) {
         bottom.appendChild(likeIcon);
     });
 };
+};
 
 let codeBtn = document.querySelector('.newPost button');
 
@@ -137,13 +139,15 @@ function addPost(id) {
 
 
 // HOME
-let profilesx = document.querySelector('#profilesx');
+let profilesx = document.getElementById('profilesx');
+if(profilesx){
 profilesx.addEventListener('mouseover', displayprofile);
 profilesx.addEventListener('mouseout', unshowprofile);
+}
 
 function displayprofile(){
     let profiledrop = document.querySelector('.profiledrop');
-    profiledrop.style.display = 'block';
+    profiledrop.style.display = 'block'
 }
 function unshowprofile(){
     let profiledrop = document.querySelector('.profiledrop');
@@ -164,10 +168,12 @@ function profileSet(){
         online.insertBefore(onlineName, onlineDot);
 
     let dropdown = document.querySelector('#dropdown');
+
+    if (dropdown){
     dropdown.innerHTML = `<li class="list-group-item">${utente.name}</li>
     <li class="list-group-item">${utente.email}</li>
     <li class="list-group-item">${utente.website}</li>`;
-    
+    }
 }
 
 
@@ -175,18 +181,12 @@ function profileSet(){
 // PROFILE
 
 
-/* function userProfile(id) {
-    fetch(usersAPI+id).then(response => response.json()).then(json => {
-        console.log(json);
-    })
-} */
-
-profilesx.addEventListener('click', compilaProfilo);
 
 function compilaProfilo(){
     let utente = JSON.parse(localStorage.getItem('utente'));    
 
     let spname = document.querySelector('.spname');
+    console.log(spname);
     spname.innerText = utente.name;
     let spemail = document.querySelector('.spemail');
     spemail.innerText = utente.email;
