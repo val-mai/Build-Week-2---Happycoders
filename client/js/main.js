@@ -181,7 +181,9 @@ function profileSet(){
     })
 } */
 
-if(spname){
+profilesx.addEventListener('click', compilaProfilo);
+
+function compilaProfilo(){
     let utente = JSON.parse(localStorage.getItem('utente'));    
 
     let spname = document.querySelector('.spname');
