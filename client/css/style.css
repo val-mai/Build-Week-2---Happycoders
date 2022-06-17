@@ -12314,7 +12314,7 @@ h3 span, .h3 span {
 }
 
 .logo {
-  margin: 0 auto;
+  margin: 0 1rem 0 auto;
   width: 3rem;
 }
 
@@ -12331,6 +12331,7 @@ h3 span, .h3 span {
 #col-sx .card {
   background-color: transparent;
   color: white;
+  text-align: center;
 }
 
 #col-sx .card .card-body {
@@ -12346,6 +12347,7 @@ h3 span, .h3 span {
 
 #col-sx .card .card-body .online {
   margin-top: 0.3rem;
+  display: none;
 }
 
 #col-sx .card .card-body .online p {
@@ -12368,6 +12370,7 @@ h3 span, .h3 span {
 
 #col-sx .container {
   margin-top: 1.3rem;
+  padding: 0;
 }
 
 #col-sx .container .list-group-item {
@@ -12378,6 +12381,10 @@ h3 span, .h3 span {
   color: white;
 }
 
+#col-sx .container .list-group-item strong {
+  display: none;
+}
+
 #col-sx .container .list-group-item .iconify {
   color: #9637E0;
   margin: 0 auto;
@@ -12386,12 +12393,13 @@ h3 span, .h3 span {
 }
 
 #col-sx .container .list-group-item:hover {
+  display: none;
   background-color: #C3B4CF;
   color: #000000;
 }
 
 #col-sx .container .profiledrop {
-  display: none;
+  display: none !important;
 }
 
 #col-sx .footer {
@@ -12428,7 +12436,7 @@ h3 span, .h3 span {
 }
 
 #col-dx .card .card-body .online p {
-  margin-bottom: 0;
+  margin: 0;
   font-size: 0.6em;
 }
 
@@ -12456,6 +12464,18 @@ h3 span, .h3 span {
     text-align: left;
   }
   #col-sx .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 90%;
     border: 1px solid #6C4897;
     border-radius: 16px;
@@ -12472,6 +12492,7 @@ h3 span, .h3 span {
   #col-sx .card .card-body .online {
     margin-left: 1.3rem;
     margin-top: 0.4rem;
+    display: inline-block;
   }
   #col-sx .card .card-body .online p {
     margin: 0;
@@ -12496,18 +12517,23 @@ h3 span, .h3 span {
     border: none;
     color: white;
   }
+  #col-sx .container .list-group-item strong {
+    display: inline-block;
+  }
   #col-sx .container .list-group-item .iconify {
     color: #9637E0;
     margin-right: 0.5rem;
     width: 3rem;
+  }
+  #col-sx .container .list-group-item .profiledrop {
+    display: inline-block;
   }
   #col-sx .container #dropdown {
     margin-left: 3.8rem;
     font-size: 0.8rem;
   }
   #col-sx .container .list-group-item:hover {
-    background-color: #C3B4CF;
-    color: #000000;
+    display: inline-block;
   }
   #col-sx .footer {
     text-align: center;
@@ -12519,8 +12545,25 @@ h3 span, .h3 span {
   #dropdown {
     margin-left: 4rem;
   }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
   .card .card-body .online p {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .card .card-body .online:last-child {
     font-size: 1.3rem;
