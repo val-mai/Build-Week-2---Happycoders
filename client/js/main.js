@@ -125,17 +125,32 @@ function addPost(id) {
 
     console.log(newPost);
 
-    fetch(urlPost, {
+/*     fetch(urlPost, {
         method: "POST",
-        body: JSON.stringify(newPost),
+        body: JSON.stringify({body:textarea.value}),
         headers: {
-            'Content-Type': 'application/json',
+            'Content-type': 'application/json',
         }
     }).then(res => res.json()).then(json => {
         fetch(urlPost).then(res => res.json()).then(posts => showPosts(posts));
-    });
+    }); */
+
+    fetch(urlPost, {
+  method: 'POST',
+  body: JSON.stringify({
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
 
 };
+
 
 
 /* Fine Home Main */

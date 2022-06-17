@@ -83,7 +83,9 @@ app.post('/api/users', (req, res) => {
 //----------------------------------------------------------
 
 app.post('/api/posts', (req, res) => {
+    console.log(countP);
     const obj = req.body;
+    console.log(obj);
     obj.id = countP++;
     posts.push(obj);
     res.json('Post Aggiunto');
