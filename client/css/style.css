@@ -23,7 +23,7 @@
 }
 
 #profileImg {
-  width: 30%;
+  width: 35%;
   border: 2px dotted #9637e0 !important;
   border-radius: 50%;
   margin: 2rem auto;
@@ -37,7 +37,7 @@
 
 #userProfile .card {
   margin: 5rem auto !important;
-  width: 85%;
+  width: 95%;
   border: 1px solid #9637e0 !important;
   border-radius: 15px !important;
   -webkit-box-shadow: 2px 2px 10px 1px #9637e0;
@@ -45,60 +45,79 @@
   position: relative;
 }
 
-#userProfile .card h2, #userProfile .card .h2, #userProfile .card h5, #userProfile .card .h5 {
+#userProfile .card-body {
+  margin: 7rem 1rem !important;
+}
+
+#userProfile .card-body h2, #userProfile .card-body .h2, #userProfile .card-body h5, #userProfile .card-body .h5 {
   color: #fff;
 }
 
-#userProfile .card h2, #userProfile .card .h2 {
+#userProfile .card-body h2, #userProfile .card-body .h2 {
   font-size: 2rem;
   text-align: center;
-  margin: 7rem auto 2rem auto;
+  margin-bottom: 2rem;
 }
 
-#userProfile .card h5, #userProfile .card .h5 {
+#userProfile .card-body h5, #userProfile .card-body .h5 {
   font-weight: bold;
   font-size: 1rem;
   margin: 4rem auto 2rem auto;
 }
 
-#userProfile .card p {
+#userProfile .card-body p {
+  margin-left: 1rem;
   font-size: 1rem;
 }
 
-#userProfile .card span {
+#userProfile .card-body span {
   color: #694692;
   font-weight: 600;
+}
+
+@media screen and (min-width: 575px) {
+  #userProfile .card {
+    width: 80%;
+    margin: 9.5rem auto !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
   #icons {
     position: absolute;
-    top: 10.5rem;
+    top: 15rem;
+    left: 1rem;
+  }
+  #userProfile .card {
+    margin: 9rem auto !important;
+  }
+  #userProfile .card-body h5, #userProfile .card-body .h5, #userProfile .card-body p {
+    margin-left: 0;
   }
   #profileImg {
-    width: 20%;
     left: -15vw;
-  }
-  h2, .h2 {
-    margin-top: 8rem !important;
+    width: 25%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  h2, .h2 {
-    margin-top: 11rem !important;
+  #userProfile h2, #userProfile .h2 {
+    margin-top: 4rem !important;
+  }
+  #profileImg {
+    width: 20%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  h2, .h2 {
-    margin-top: 13rem !important;
+  #userProfile h2, #userProfile .h2 {
+    margin-top: 8rem !important;
   }
 }
 
 @media screen and (min-width: 1400px) {
-  h2, .h2 {
-    margin-top: 15rem !important;
+  #userProfile h2, #userProfile .h2 {
+    margin-top: 10rem !important;
   }
 }
 

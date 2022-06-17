@@ -1,6 +1,6 @@
 @import 'variables';
-
 @import 'profile';
+
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import  'login';
 /* General */
@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #1d1d1d;
+    background-color: $dark;
 }
 
 h3 {
