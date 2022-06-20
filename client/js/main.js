@@ -125,7 +125,7 @@ function addPost(id) {
 
     console.log(newPost);
 
-/*     fetch(urlPost, {
+    fetch(urlPost, {
         method: "POST",
         body: JSON.stringify({body:textarea.value}),
         headers: {
@@ -133,9 +133,9 @@ function addPost(id) {
         }
     }).then(res => res.json()).then(json => {
         fetch(urlPost).then(res => res.json()).then(posts => showPosts(posts));
-    }); */
+    });
 
-    fetch(urlPost, {
+/*     fetch(urlPost, {
   method: 'POST',
   body: JSON.stringify({
     title: 'foo',
@@ -148,7 +148,7 @@ function addPost(id) {
 })
   .then((response) => response.json())
   .then((json) => console.log(json));
-
+ */
 };
 
 
