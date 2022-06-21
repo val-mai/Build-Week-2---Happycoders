@@ -35,8 +35,6 @@ function userLogin() {
 }
 /* Home Main */
 
-let idLogin = 5;
-
 class Post {
     constructor(userId, title, body) {
         this.userId = userId;
@@ -44,8 +42,6 @@ class Post {
         this.body = body;
     }
 }
-
-
 
 let promisePost = fetch(urlPost).then(res => res.json());
 
@@ -56,10 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function showPosts(post) {
-    let utente = JSON.parse(localStorage.getItem('utente'));
+    utente = JSON.parse(localStorage.getItem('utente'));
     if (utente) {
         let postCont = document.querySelector('.post-container');
         if (postCont) {
+            post.sort((a, b) => (b.id - a.id));
             postCont.innerHTML = "";
             post.forEach(post => {
                 let postdiv = document.createElement('div');
@@ -114,20 +111,22 @@ function showPosts(post) {
 
 let codeBtn = document.querySelector('.newPost button');
 
-
 let textarea = document.querySelector('.newPost textarea');
 
-let titlePost = 'nuovo post';
+function addPost() {
 
-function addPost(id) {
+    let utente = JSON.parse(localStorage.getItem('utente'));
+    console.log(utente);
 
+    let id = utente.id;
+    
+    let titlePost = 'nuovo post';
+    
     let newPost = new Post(id, titlePost, textarea.value);
-
-    console.log(newPost);
 
     fetch(urlPost, {
         method: "POST",
-        body: JSON.stringify({body:textarea.value}),
+        body: JSON.stringify(newPost),
         headers: {
             'Content-type': 'application/json',
         }
@@ -135,20 +134,7 @@ function addPost(id) {
         fetch(urlPost).then(res => res.json()).then(posts => showPosts(posts));
     });
 
-/*     fetch(urlPost, {
-  method: 'POST',
-  body: JSON.stringify({
-    title: 'foo',
-    body: 'bar',
-    userId: 1,
-  }),
-  headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
-  .then((json) => console.log(json));
- */
+    textarea.value = '';
 };
 
 

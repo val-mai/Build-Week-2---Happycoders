@@ -17,11 +17,11 @@ let posts = JSON.parse(fs.readFileSync('json/posts.json', 'utf8'));
 
 let comments = JSON.parse(fs.readFileSync('json/comments.json', 'utf8'));
 
-let countU = users.length;
+let countU = users.length +1;
 
-let countP = posts.length;
+let countP = posts.length +1;
 
-let countC = comments.length;
+let countC = comments.length +1;
 
 //============================================================================== GET METHOD ==============================================================================
 
